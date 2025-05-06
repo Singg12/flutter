@@ -35,9 +35,9 @@ flutter_lints
 file:///Users/promvuthy/.pub-cache/hosted/pub.dev/flutter_lints-5.0.0/
 file:///Users/promvuthy/.pub-cache/hosted/pub.dev/flutter_lints-5.0.0/lib/
 http
-2.19
-file:///Users/promvuthy/.pub-cache/hosted/pub.dev/http-0.13.6/
-file:///Users/promvuthy/.pub-cache/hosted/pub.dev/http-0.13.6/lib/
+3.4
+file:///Users/promvuthy/.pub-cache/hosted/pub.dev/http-1.4.0/
+file:///Users/promvuthy/.pub-cache/hosted/pub.dev/http-1.4.0/lib/
 http_parser
 3.4
 file:///Users/promvuthy/.pub-cache/hosted/pub.dev/http_parser-4.1.2/
@@ -110,6 +110,10 @@ vm_service
 3.3
 file:///Users/promvuthy/.pub-cache/hosted/pub.dev/vm_service-14.3.1/
 file:///Users/promvuthy/.pub-cache/hosted/pub.dev/vm_service-14.3.1/lib/
+web
+3.4
+file:///Users/promvuthy/.pub-cache/hosted/pub.dev/web-1.1.1/
+file:///Users/promvuthy/.pub-cache/hosted/pub.dev/web-1.1.1/lib/
 applicaion
 3.7
 file:///Users/promvuthy/development/flutter-2/

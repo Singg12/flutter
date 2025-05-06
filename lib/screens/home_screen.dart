@@ -35,12 +35,27 @@ class HomeScreen extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Image.network(products[i].image, height: 100),
+                  products[i].image != null
+                      ? Image.network(
+                          products[i].image!,
+                          height: 100,
+                          errorBuilder: (context, error, stackTrace) => const Icon(Icons.error, size: 100),
+                        )
+                      : const Icon(Icons.image_not_supported, size: 100),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Text(products[i].title, maxLines: 2, overflow: TextOverflow.ellipsis),
+                    child: Text(
+                      products[i].title ?? 'No title',
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                      textAlign: TextAlign.center,
+                    ),
                   ),
-                  Text('\$${products[i].price.toStringAsFixed(2)}'),
+                  Text(
+                    products[i].price != null
+                        ? '\$${products[i].price!.toStringAsFixed(2)}'
+                        : 'Price N/A',
+                  ),
                 ],
               ),
             ),

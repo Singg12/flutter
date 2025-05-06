@@ -1,22 +1,25 @@
 class Product {
-  final int id;
-  final String title;
-  final String image;
-  final double price;
+  final int? id;
+  final String? title;
+  final String? description;
+  final String? image;
+  final double? price;
 
   Product({
-    required this.id,
-    required this.title,
-    required this.image,
-    required this.price,
+    this.id,
+    this.title,
+    this.description,
+    this.image,
+    this.price,
   });
 
   factory Product.fromJson(Map<String, dynamic> json) {
     return Product(
-      id: json['id'],
-      title: json['title'],
-      image: json['image'],
-      price: double.tryParse(json['price'].toString()) ?? 0.0,
+      id: json['id'] as int?,
+      title: json['title'] as String?,
+      description: json['description'] as String?,
+      image: json['image'] as String?,
+      price: json['price'] != null ? double.tryParse(json['price'].toString()) : null,
     );
   }
 }
